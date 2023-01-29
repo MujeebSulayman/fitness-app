@@ -9,7 +9,7 @@ const Loader = () => (
     alignItems='center'
     width='100%'
   >
-    <InfinitySpin color='grey' />
+    <InfinitySpin color='#424' />
   </Stack>
 );
 

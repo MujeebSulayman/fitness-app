@@ -12,7 +12,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   useEffect(() => {
     const fetchExercisesData = async () => {
-      let exercisesData = [setExercises];
+      let exercisesData = [];
 
       if (bodyPart === 'all') {
         exercisesData = await fetchData(
@@ -35,7 +35,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   // Pagination
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.toString().slice(
+  const currentExercises = exercises.slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );
@@ -64,11 +64,9 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap='wrap'
         justifyContent='center'
       >
-        
         {currentExercises.map((exercise, idx) => (
           <ExerciseCard key={idx} exercise={exercise} />
         ))}
-        
       </Stack>
       <Stack sx={{ mt: { lg: '114px', xs: '70px' } }} alignItems='center'>
         {exercises.length > 9 && (
