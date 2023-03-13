@@ -50,6 +50,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         sx={{ fontSize: { lg: '40px', xs: '27px' } }}
         mb='35px'
         textAlign='center'
+        color='white'
       >
         Search Awesome Exercise 
        

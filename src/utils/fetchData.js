@@ -3,7 +3,7 @@ export const exerciseOptions = {
   url: 'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
   headers: {
     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-    'X-RapidAPI-Key': 'a60b9c5af8mshd421c4c8b59241ep12e443jsn5cf470288b03',
+    'X-RapidAPI-Key': '0bac4db036msh176337af21b321fp1bf30ajsn4d5cb9f55721',
   },
 };
 
@@ -18,6 +18,5 @@ export const youtubeOptions = {
 export const fetchData = async (url, options) => {
   const response = await fetch(url, options);
   const data = await response.json();
-
   return data;
 };

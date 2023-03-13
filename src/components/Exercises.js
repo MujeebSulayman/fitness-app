@@ -51,12 +51,18 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   return (
     <Box id='exercises' sx={{ mt: { lg: '109px' } }} mt='50px' p='20px'>
       <Typography
-        variant='h4'
+        variant='h5'
         fontWeight='bold'
+        alignItems='center'
+        justifyContent='center'
+        color='white'
         sx={{ fontSize: { lg: '44px', xs: '30px' } }}
+        display={{
+          opacity: '0.5'
+        }}
         mb='46px'
       >
-        Showing Results
+        Exercise Results
       </Typography>
       <Stack
         direction='row'

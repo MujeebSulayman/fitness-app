@@ -8,11 +8,11 @@ const Navbar = () => (
   <Stack
     direction='row'
     justifyContent='space-around'
+    backgroundColor='white'
     sx={{
-      gap: { sm: '123px', xs: '40px' },
-      mt: { sm: '32px', xs: '20px' },
+      gap: { sm: '110px', xs: '37px' },
+      padding: { sm: '20px', xs: '12px' },
       justifyContent: 'none',
-      
     }}
     px='20px'
   >
@@ -20,13 +20,13 @@ const Navbar = () => (
       <img
         src={Logo}
         alt='logo'
-        style={{ width: '48px', height: '48px', margin: '0px 20px' }}
+        style={{ width: '40px', height: '48px', margin: '0px 20px' }}
       />
     </Link>
     <Stack
       direction='row'
-      gap='40px'
-      fontFamily='Alegreya'
+      gap='50px'
+      fontFamily='Josefin Sans'
       fontSize='18px'
       alignItems='flex-end'
     >
@@ -34,13 +34,21 @@ const Navbar = () => (
         to='/'
         style={{
           textDecoration: 'none',
-          color: '#3A1212',
-          borderBottom: '3px solid #FF9752',
+          color: 'black',
+          borderBottom: '3px solid #424',
+          fontSize: '19px',
         }}
       >
         Home
       </Link>
-      <a href='#exercises' style={{ textDecoration: 'none', color: '#3A1212' }}>
+      <a
+        href='#exercises'
+        style={{
+          textDecoration: 'none',
+          color: 'black',
+          fontSize: '19px',
+        }}
+      >
         Exercises
       </a>
     </Stack>

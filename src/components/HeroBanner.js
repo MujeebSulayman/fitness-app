@@ -1,16 +1,21 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 
-import HeroBannerImage from '../assets/images/banner.png';
+import HeroBannerImage from '../assets/images/banner.jpg';
 
 const HeroBanner = () => (
   <Box
     sx={{ mt: { lg: '100px', xs: '70px' }, ml: { sm: '50px' } }}
     position='relative'
     p='10px'
+    color='#e7e7e7'
   >
-    <Typography color='#FF5825' fontWeight='600' fontSize='30px'>
-      Fitness App
+    <Typography color='white' fontWeight='600' fontSize='30px'
+    display={{ 
+      opacity: '0.4'
+    }}
+    >
+      HemFitness
     </Typography>
     <Typography
       fontWeight={600}
@@ -20,7 +25,10 @@ const HeroBanner = () => (
     >
       Hit the Gym
       <br />
-      <b>Everyday....Repeat</b>
+      <b>Everyday....
+      Gains Bruh
+      </b>
+      
     </Typography>
     <Typography fontSize='22px' fontFamily='Alegreya' lineHeight='35px'>
       Check out the most <b>effective exercises </b>
@@ -31,7 +39,7 @@ const HeroBanner = () => (
       href='#exercises'
       style={{
         marginTop: '45px',
-        marginBottom: "80px",
+        marginBottom: '80px',
         textDecoration: 'none',
         width: '180px',
         textAlign: 'center',
@@ -42,14 +50,15 @@ const HeroBanner = () => (
         color: 'white',
         borderRadius: '6px',
       }}
->
+    >
       Explore Exercises
     </Button>
     <Typography
       fontWeight={600}
-      color='blue'
+      color='white'
+      marginTop='20px'
       sx={{
-        opacity: '0.1',
+        opacity: '0.2',
         display: { lg: 'block', xs: 'none' },
         fontSize: '200px',
       }}

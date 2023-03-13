@@ -12,9 +12,10 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
       bodyPart === item
         ? {
             borderTop: '4px solid #FF2625',
-            background: '#fff',
+            background: 'black',
             borderBottomLeftRadius: '20px',
-            width: '270px',
+          width: '270px',
+            color: 'white',
             height: '282px',
             cursor: 'pointer',
             gap: '47px',

@@ -36,7 +36,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
       mb='33px'
     >
       Similar{' '}
-      <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>
+      <span style={{ color: 'white', textTransform: 'capitalize' }}>
         Equipment
       </span>{' '}
       exercises
