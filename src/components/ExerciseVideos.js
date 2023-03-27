@@ -13,7 +13,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
         color='white'
         mb='33px'
       >
-        Watch{' '}
+        Watch
         <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>
           {name}
         </span>{' '}
@@ -43,9 +43,9 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                 sx={{ fontSize: { lg: '28px', xs: '18px' } }}
                 fontWeight={600}
                 color='white'
-              >
+                >
                 {item.video.title}
-              </Typography>
+                </Typography>
               <Typography fontSize='14px'
                 display={{
                   opacity: '0.5'

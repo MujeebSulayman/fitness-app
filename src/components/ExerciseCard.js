@@ -9,9 +9,9 @@ const ExerciseCard = ({ exercise }) => (
       <Button
         sx={{
           ml: '21px',
-          color: '#fff',
           background: '#FFA9A9',
           fontSize: '14px',
+          color: '#fff',
           borderRadius: '20px',
           textTransform: 'capitalize',
         }}
