@@ -1,11 +1,14 @@
-import React from 'react';
+// import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 
 import HeroBannerImage from '../assets/images/banner.jpg';
 
 const HeroBanner = () => (
   <Box
-    sx={{ mt: { lg: '100px', xs: '70px' }, ml: { sm: '50px' } }}
+    sx={{
+      mt: { lg: '100px', xs: '70px' },
+      ml: { sm: '50px' }
+    }}
     position='relative'
     p='10px'
     color='#e7e7e7'
@@ -56,11 +59,10 @@ const HeroBanner = () => (
     <Typography
       fontWeight={600}
       color='white'
-      marginTop='20px'
       sx={{
         opacity: '0.2',
         display: { lg: 'block', xs: 'none' },
-        fontSize: '200px',
+        fontSize: '190px',
       }}
     >
       Exercise
