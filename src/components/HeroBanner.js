@@ -54,6 +54,7 @@ const HeroBanner = () => (
         borderRadius: '6px',
       }}
     >
+      
       Explore Exercises
     </Button>
     <Typography
